@@ -51,7 +51,7 @@
  <label for="callerName" class="col-sm-4
 col-form-label">Caller's Name</label>
  <div class="col-sm-8">
- <input type="text" class="form-control" id="callerName" name="callerName" required pattern="[A-Za-z_ ]{1,20}" title="Please Use Alphabets Only">
+ <input type="text" class="form-control" id="callerName" name="callerName" required pattern="[A-Za-z]{1,20}" title="Please use alphabets only">
  </div>
  </div>
  
@@ -61,7 +61,7 @@ col-form-label">Caller's Name</label>
  <label for="contactNo" class="col-sm-4
 col-form-label">Contact Number (Required)</label>
  <div class="col-sm-8">
- <input type="text" class="form-control" id="contactNo" name="contactNo"  required pattern="[0-9]{8}"  title="Please input at least 8 numbers">
+ <input type="text" class="form-control" id="contactNo" name="contactNo"  required pattern="[0-9]{8}"  title="Only numbers are allowed to be inputed and only 8 numbers">
  </div>
  </div>
 
