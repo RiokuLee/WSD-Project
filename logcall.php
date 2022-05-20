@@ -75,21 +75,21 @@ col-form-label">Location of Incident (Required)</label>
  </div>
  
  <div class="form-group row">
-                        <label for="typeofIncident" class="col-sm-4 col-form-label">Type of Incident (Required)</label>
-                        <div class="col-sm-8">
-                            <select id="typeofIncident" class="form-control"name="typeofIncident" required>
-                                <option value="">Select</option>
-                                <?php 
-                                    for ($i=0; $i < count($incidentTypes); $i++) 
-                                    { 
-                                        $incidentType = $incidentTypes[$i];
-                                        echo '<option value="' . $incidentType['id'] . '">' . $incidentType['type'] . '</option>';
-                                    }
+        <label for="typeofIncident" class="col-sm-4 col-form-label">Type of Incident (Required)</label>
+        <div class="col-sm-8">
+            <select id="typeofIncident" class="form-control"name="typeofIncident" required>
+                 <option value="">Select</option>
+                    <?php 
+                        for ($i=0; $i < count($incidentTypes); $i++) 
+                        { 
+                            $incidentType = $incidentTypes[$i];
+                            echo '<option value="' . $incidentType['id'] . '">' . $incidentType['type'] . '</option>';
+                        }
 
-                                ?>
-                            </select>
-                        </div>
-                    </div>
+                    ?>
+            </select>
+     </div>
+</div>
  
  <div class="form-group row">
  <label for="descriptionofIncident" class="col-sm-4
